@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import movies from "./movieDummy.js";
+import Movie from "./Components/Movie.jsx";
+import "./index.css";
 
 function App() {
+  document.body.style.backgroundColor = "#22254b";
+  document.body.style.padding = "auto";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {movies.results.map((item) => {
+        return (
+          <Movie
+            name={item.title}
+            poster={item.poster_path}
+            date={item.release_date}
+          />
+        );
+      })}
     </div>
   );
 }
