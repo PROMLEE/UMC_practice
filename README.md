@@ -1,6 +1,6 @@
-# 리액트 기초 및 기본 요소 실습
+# CSS 라이브러리
 
-실습 : 리액트 개념을 이용하여 영화 앱 구현
+실습 : 3주차에 만들었던 영화 페이지의 CSS를 Styled-Component로 변경
 
 [구현 page link](https://promlee.github.io/react_NETFLIXclonecoding/)
 
