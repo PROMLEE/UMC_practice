@@ -1,12 +1,21 @@
 import "../index.css";
 import { useState } from "react";
-export default function Movie({ name, poster, date, overview }) {
+import { useNavigate } from "react-router-dom";
+
+export default function Movie({ name, poster, date, overview, id }) {
   const [isHovering, setIsHovering] = useState(0);
+  const navigate = useNavigate();
+
+  const onClickImg = () => {
+    navigate(`${name}`, { state: { name, poster, overview } });
+  };
+
   return (
     <span
       className="wrapper"
       onMouseOver={() => setIsHovering(1)}
       onMouseOut={() => setIsHovering(0)}
+      onClick={onClickImg}
     >
       <div className="overview">
         {isHovering ? (
