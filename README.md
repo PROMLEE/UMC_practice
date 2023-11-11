@@ -2,6 +2,6 @@
 
 실습 : 리액트 개념을 이용하여 영화 앱 구현
 
-[구현 page link](https://promlee.github.io/react_NETFLIXclonecoding/)
+[구현 page link](https://promleepractice3.netlify.app/)  
 
 ![구현 image](result.png)
