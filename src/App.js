@@ -4,14 +4,23 @@ import Movie from "./pages/Movie.jsx";
 import TV from "./pages/TV.jsx";
 import Celebrity from "./pages/Celebrity.jsx";
 import Home from "./pages/Home.jsx";
+import Login from "./pages/Login.jsx";
 import movies from "./movieDummy.js";
 import NotFound from "./pages/NotFound.jsx";
 import MovieDetail from "./pages/MovieDetail.jsx";
+import styled from "styled-components";
 
+const Appform = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+`;
 function App() {
   document.body.style.margin = 0;
   return (
-    <div className="root-wrap">
+    <div>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -19,7 +28,7 @@ function App() {
           <Route
             path="/Movie"
             element={
-              <div className="App">
+              <Appform>
                 {movies.results.map((item) => {
                   return (
                     <Movie
@@ -31,12 +40,13 @@ function App() {
                     />
                   );
                 })}
-              </div>
+              </Appform>
             }
           />
           <Route path="/Movie/:name" element={<MovieDetail />} />
           <Route path="/TV" element={<TV />} />
           <Route path="/Celebrity" element={<Celebrity />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

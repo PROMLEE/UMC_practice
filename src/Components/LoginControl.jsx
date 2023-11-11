@@ -1,5 +1,20 @@
 import React, { useState } from "react";
-import "../index.css";
+import styled from "styled-components";
+
+const Button = styled.button`
+  margin-top: 12px;
+  margin-left: 40px;
+  width: 80px;
+  height: 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  border-color: none;
+`;
+const Logintext = styled.span`
+  color: white;
+  margin-left: 20px;
+`;
 
 function LoginControl() {
   const [isLoggedin, setIsLoggedin] = useState(false);
@@ -17,13 +32,10 @@ function LoginControl() {
 
   return (
     <div>
-      <button
-        className="loginbutton"
-        onClick={isLoggedin ? handleLogoutClick : handleLoginClick}
-      >
+      <Button onClick={isLoggedin ? handleLogoutClick : handleLoginClick}>
         {buttonText}
-      </button>
-      <span className="logintext">{loginText}</span>
+      </Button>
+      <Logintext>{loginText}</Logintext>
     </div>
   );
 }
