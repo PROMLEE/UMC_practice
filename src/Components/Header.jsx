@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../index.css";
+import LoginControl from "./LoginControl";
 
 export default function Header() {
   return (
@@ -22,6 +23,7 @@ export default function Header() {
           <li>인물</li>
         </Link>
       </ul>
+      <LoginControl />
     </div>
   );
 }

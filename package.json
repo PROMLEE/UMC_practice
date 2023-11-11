@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://promleepracticech5.netlify.app",
+  "homepage": "https://*.netlify.app",
   "eslintConfig": {
     "extends": [
       "react-app",
