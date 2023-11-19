@@ -1,23 +1,10 @@
-import movies from "./movieDummy.js";
-import Movie from "./Components/Movie.jsx";
-import "./index.css";
+import Weather from "./Components/Weather.jsx";
 
-function App() {
-  document.body.style.backgroundColor = "#22254b";
-  document.body.style.padding = "auto";
+export default function App() {
+  document.body.style.margin = 0;
   return (
-    <div className="App">
-      {movies.results.map((item) => {
-        return (
-          <Movie
-            name={item.title}
-            poster={item.poster_path}
-            date={item.release_date}
-          />
-        );
-      })}
+    <div>
+      <Weather></Weather>
     </div>
   );
 }
-
-export default App;
