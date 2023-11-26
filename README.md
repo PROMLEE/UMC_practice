@@ -1,7 +1,7 @@
-# Chapter 8. API와 서버 통신
+# Chapter 9. 토큰, 웹 스토리지 그리고 로그인
 
-실습 : Open Weather Map 날씨 API를 활용하여 날씨 체크 화면 구현  
+실습 : 9주차 미션 사전세팅하기
 
-[구현 page link](https://promleepracticech8.netlify.app/)  
+<!-- [구현 page link](https://promleepracticech8.netlify.app/) -->
 
-![구현 image](sources/result1.png)  
+![구현 image](sources/result1.png)
